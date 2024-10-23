@@ -49,12 +49,12 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 1vw;
+    padding: 1vh 2vw;
 }
 
 header img{
     height: 100%;
-    border-radius: 50%;
+    border-radius: 10vh;
 }
 
 header h1{
@@ -63,9 +63,11 @@ header h1{
     font-family: "Bungee Inline", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3.2vw;
 }
 
 header a{
+    font-size: 1.2vw;
     text-decoration: none;
     color: black;
 }
@@ -74,6 +76,7 @@ header a{
 nav{
     height: var(--altura-nav);
     background-color: var(--fondo-nav);
+    font-size: 1.2vw;
 }
 
 nav ul{
@@ -112,6 +115,7 @@ main section h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2vw;
 }
 
 /* PIE */ 
@@ -123,10 +127,38 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2vw;
 }
 
 footer a{
     color: var(--color-footer);
+}
+
+/* Media Querys*/
+@media only screen and (orientation: portrait) {
+    :root{
+        --altura-header: 8vh;
+        --altura-nav: 3vh;
+        --altura-main: 86vh;
+        --altura-footer: 3vh;
+    }
+    
+    header a{
+        font-size: 3vw;
+    }
+
+    nav{
+        font-size: 3vw;
+    }
+
+    footer{
+        font-size: 3vw;
+    }
+
+    main section h2{
+        font-size: 4vw;
+        height: 5%;
+    }
 }
 
 /* PRODUCTOS */
@@ -142,7 +174,7 @@ footer a{
 
 .tarjeta{
     width: 18%;
-    height: 70%;
+    height: 72%;
     margin: 1.5vh 0;
     padding: 1.5vh;
     border:1px solid lightgrey;
@@ -164,6 +196,7 @@ footer a{
     height: 10%;
     display: flex;
     align-items: center;
+    font-size: 1.2vw;
 }
 
 .tarjeta p{
@@ -171,7 +204,7 @@ footer a{
     height: 20%;
     display: flex;
     align-items: center;
-    font-size: 4vh;
+    font-size: 2vw;
 }
 
 .tarjeta a{
@@ -180,10 +213,39 @@ footer a{
 
 .tarjeta button{
     height: 100%;
-    font-size: 2vh;
+    font-size: 1vw;
     padding: 0.1vh 0.5vw;
     border: 2px solid lightgrey;
     border-radius: 0.8vh;
+    cursor: pointer;
+}
+
+@media only screen and (orientation: portrait) {
+
+    .tabla-productos{
+        height: 95%;
+    }
+
+    .tarjeta{
+        width: 45%;
+        height: 40%;
+    }
+
+    .tarjeta img{
+        height: 60%;
+    }
+
+    .tarjeta h4{
+        font-size: 3vw;
+    }
+
+    .tarjeta p{
+        font-size: 4vw;
+    }
+
+    .tarjeta button{
+        font-size: 2.5vw;
+    }
 }
 
 /* CONTACTO */
