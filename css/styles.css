@@ -16,6 +16,7 @@
 
     --color-nav: Beige;
     --color-h2: AliceBlue;
+    --color-about: AliceBlue;
     --color-form: AliceBlue;
     --color-footer: Beige;
 
@@ -134,7 +135,7 @@ footer a{
     color: var(--color-footer);
 }
 
-/* Media Querys*/
+/* Media Querys Comunes*/
 @media only screen and (orientation: portrait) {
     :root{
         --altura-header: 8vh;
@@ -158,6 +159,24 @@ footer a{
     main section h2{
         font-size: 4vw;
         height: 5%;
+    }
+}
+
+/* HOME */
+.parrafo-about{
+    font-size: 1.2vw;
+    height: 90%;
+    color: var(--color-about);
+}
+
+.parrafo-about p{
+    margin: 3vh 0;
+}
+
+/* Media Querys HOME */
+@media only screen and (orientation: portrait) {
+    .parrafo-about{
+        font-size: 3vw;
     }
 }
 
@@ -207,10 +226,6 @@ footer a{
     font-size: 2vw;
 }
 
-.tarjeta a{
-    height: 10%;
-}
-
 .tarjeta button{
     height: 100%;
     font-size: 1vw;
@@ -220,6 +235,7 @@ footer a{
     cursor: pointer;
 }
 
+/* Media Querys PRODUCTOS */
 @media only screen and (orientation: portrait) {
 
     .tabla-productos{
@@ -231,27 +247,22 @@ footer a{
         height: 40%;
     }
 
-    .tarjeta img{
-        height: 60%;
-    }
-
     .tarjeta h4{
-        font-size: 3vw;
-    }
-
-    .tarjeta p{
         font-size: 4vw;
     }
 
+    .tarjeta p{
+        font-size: 5vw;
+    }
+
     .tarjeta button{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 }
 
 /* CONTACTO */
 .info-contacto{
     height: 90%;
-    padding: 1vh 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -259,6 +270,7 @@ footer a{
 
 .info-contacto form{
     width: 40%;
+    font-size: 1.2vw;
 }
 
 .info-contacto iframe{
@@ -266,16 +278,20 @@ footer a{
 }
 
 .info-contacto form fieldset{
-    padding: 1vh 1vw;
+    padding: 1vh 2vw;
     height: 100%;
     border-radius: 1vh;
     color: var(--color-form);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .form-linea{
+    height: 10%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin: 1.5vh 0;
 }
 
 .form-linea label{
@@ -283,32 +299,60 @@ footer a{
 }
 
 .form-linea input{
-    width: 80%;
+    width: 75%;
     padding: 0.5vh 0.5vw;
     background-color: var(--fondo-input);
 }
 
 .form-msg{
+    height: 50%;
     display: flex;
-    margin: 1.5vh 0;
     flex-direction: column;
 }
 
 .form-msg textarea{
+    height: 90%;
     padding: 1vh 0.5vw;
     background-color: var(--fondo-input);
 }
 
 .form-botones{
+    height: 10%;
     display: flex;
     justify-content: space-evenly;
-    margin: 3vh 0;
+    
 }
 
 .form-botones input{
+    font-size: 1.2vw;
     padding: 0.5vh 1vw;
     border-radius: 10%;
     box-shadow: 1vw 1vh 1vw;
+}
+
+/* Media Querys CONTACTO */
+@media only screen and (orientation: portrait) {
+    .info-contacto{
+        height: 95%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 3.5vw;
+    }
+
+    .info-contacto form{
+        width: 90%;
+        height: 55%;
+        font-size: 3.5vw;
+    }
+
+    .info-contacto iframe{
+        width: 90%;
+        height: 40%;
+    }
+
+    .form-botones input{
+        font-size: 3.5vw;
+    }
 }
 
 /* CARRITO */
@@ -380,4 +424,9 @@ footer a{
     font-size: 4vh;
     text-align: end;
     margin-inline: 1vw;
+}
+
+/* Media Querys CARRITO */
+@media only screen and (orientation: portrait) {
+    
 }
