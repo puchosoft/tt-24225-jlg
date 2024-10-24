@@ -388,8 +388,7 @@ footer a{
 
 .item-compra img{
     width: 4.5%;
-    .margin: 1vmax;
-    padding: 1vmax;
+    padding: 0.5vw;
 }
 
 .item-compra p{
@@ -431,8 +430,7 @@ footer a{
 
 .total-compra div{
     width: 4.5%;
-    .margin: 1vmax;
-    padding: 1vmax;
+    padding: 0.5vw;
 }
 
 .total-compra p{
