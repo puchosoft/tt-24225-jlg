@@ -1,3 +1,9 @@
 # Talento Tech - Front-End JS - Comision 24225
 ## Proyecto Final - Jose Luis Gonzalez
-Sitio de emulacion de un e-commerce con consumo de API REST
+Emulacion de un sitio de e-commerce
+
+El proyecto implementa:
+- Estilos CSS avanzados (flexbox y grid)
+- Media Querys para orientaciones portrait y landscape
+- Bootstrap para cards y botones
+
