@@ -393,3 +393,13 @@ footer a{
     }
 
 }
+
+/* RESEÑAS */
+.resena-contenedor{
+    height: 90%;
+    color: var(--color-h2);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 3vw;
+}
