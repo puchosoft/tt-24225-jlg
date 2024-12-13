@@ -67,11 +67,11 @@ header h1{
     font-family: "Bungee Inline", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3.2vw;
+    font-size: 3.0vw;
 }
 
 header a{
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     text-decoration: none;
     color: black;
 }
@@ -80,7 +80,7 @@ header a{
 nav{
     height: var(--altura-nav);
     background-color: var(--fondo-nav);
-    font-size: 1.2vw;
+    font-size: 1.0vw;
 }
 
 nav ul{
@@ -131,7 +131,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
 }
 
 footer a{
@@ -148,15 +148,15 @@ footer a{
     }
     
     header a{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     nav{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     footer{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     main section h2{
@@ -221,7 +221,7 @@ footer a{
 .info-contacto form{
     width: 40%;
     height: 100%;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     border: 1px white;
     border-radius: 1vh;
     color: var(--color-form);
@@ -234,7 +234,7 @@ footer a{
     width: 40%;
 }
 
-.info-contacto form fieldset{
+/* .info-contacto form fieldset{
     padding: 1vh 2vw;
     width: 100%;
     height: 100%;
@@ -243,7 +243,7 @@ footer a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+} */
 
 .form-linea{
     height: 10%;
@@ -254,11 +254,11 @@ footer a{
 }
 
 .form-linea label{
-    width: 20%;
+    width: 15%;
 }
 
 .form-linea input{
-    width: 75%;
+    width: 80%;
     padding: 0.5vh 0.5vw;
     background-color: var(--fondo-input);
 }
@@ -273,17 +273,18 @@ footer a{
     height: 90%;
     padding: 1vh 0.5vw;
     background-color: var(--fondo-input);
+    margin-top: 2vh;
 }
 
 .form-botones{
-    height: 10%;
+    height: 8%;
     display: flex;
     justify-content: space-evenly;
     
 }
 
 .form-botones input{
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     padding: 0.5vh 1vw;
     border-radius: 10%;
     box-shadow: 1vw 1vh 1vw;
@@ -301,7 +302,7 @@ footer a{
     .info-contacto form{
         width: 90%;
         height: 55%;
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 
     .info-contacto iframe{
@@ -310,7 +311,7 @@ footer a{
     }
 
     .form-botones input{
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 }
 
@@ -336,21 +337,21 @@ footer a{
 
 .carrito-descripcion{
     font-style: italic;
-    font-size: 2vw;
+    font-size: 1.2vw;
 }
 
 .carrito-precio{
     justify-self: end;
-    font-size: 2vw;
+    font-size: 1.2vw;
     font-weight: bolder;
 }
 
 .carrito-boton{
     cursor: pointer;
-    background-color: rgba(255,0,0,20%);
-    font-weight: bolder;
-    font-size: 1.2vw;
+    /* background-color: rgba(255,0,0,20%); */
+    /* font-weight: bolder; */
     border-radius: 0.5vw;
+    font-size: 0.8vw;
 }
 
 .carrito-total{
@@ -376,20 +377,24 @@ footer a{
     }
     
     .carrito-img{
-        padding-block: 30%;
+        padding-block: 15%;
     }
 
     .carrito-descripcion{
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     .carrito-precio{
-        font-size: 5vw;
+        font-size: 2vw;
     }
     
     .carrito-boton{
-        font-size: 5vw;
         border-radius: 1vw;
+        font-size: 1.3vw;
+    }
+
+    .carrito-total{
+        height: 5%;
     }
 
 }
