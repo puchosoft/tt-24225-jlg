@@ -39,10 +39,10 @@ function render_products(products){
         const card = document.createElement('div');
         card.className = 'card text-center productos-tarjeta';
         card.innerHTML = `
-            <img class="card-img-top" src="${p.thumbnail}" alt="Foto del producto">
+            <img class="card-img-top mx-auto productos-img" src="${p.thumbnail}" alt="Foto del producto">
             <div class="card-body">
                 <p class="card-title fst-italic productos-titulo">${p.title}</p>
-                <p class="card-text fw-bolder">$ ${p.price}</p>
+                <p class="card-text fw-bolder productos-precio">$ ${p.price}</p>
                 <button class="btn btn-success btn-sm mt-2 productos-boton">Agregar</button>
             </div>`;
         const botonAgregar = card.querySelector('button');
@@ -58,10 +58,12 @@ function agregarAlCarrito(product){
     indice = carrito.findIndex( e => e.id == product.id);
     if (indice < 0) { // Si el item no existe, lo agrega
         product.cantidad = 1;
+        product.subtotal = product.price;
         carrito.push(product)
     }
-    else { // Si el item existe, actualiza su cantidad
+    else { // Si el item existe, actualiza su cantidad y subtotal
         carrito[indice].cantidad++;
+        carrito[indice].subtotal = Math.round(carrito[indice].cantidad * carrito[indice].price * 100) / 100;
     }
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }

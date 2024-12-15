@@ -71,7 +71,7 @@ header h1{
 }
 
 header a{
-    font-size: 1.0vw;
+    font-size: 1.2vw;
     text-decoration: none;
     color: black;
 }
@@ -80,7 +80,7 @@ header a{
 nav{
     height: var(--altura-nav);
     background-color: var(--fondo-nav);
-    font-size: 1.0vw;
+    font-size: 1.2vw;
 }
 
 .nav-link {
@@ -123,7 +123,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.0vw;
+    font-size: 1.2vw;
 }
 
 footer a{
@@ -140,15 +140,15 @@ footer a{
     }
     
     header a{
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
 
     nav{
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
 
     footer{
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
 
     main section h2{
@@ -177,6 +177,11 @@ footer a{
 
 /* PRODUCTOS */
 
+.productos-paginacion{
+    height: 10%;
+    font-size: 1.2vw;
+}
+
 .productos-contenedor{
     height: 80%;
     display: grid;
@@ -187,24 +192,33 @@ footer a{
     padding-inline: 2vw;
 }
 
-.productos-paginacion{
-    height: 10%;
-}
-
 .productos-tarjeta{
     background-color: var(--fondo-card);
 }
 
+.productos-img{
+    width: 75%;
+}
+
 .productos-titulo{
-    font-size: 0.9vw;
+    font-size: 1.2vw;
+    height: 35%;
+}
+.productos-precio{
+    font-size: 1.2vw;
 }
 
 .productos-boton{
-    font-size: 0.7vw;
+    font-size: 1vw;
 }
 
 /* Media Querys PRODUCTOS */
 @media only screen and (orientation: portrait) {
+
+    .productos-paginacion{
+        height: 5%;
+        font-size: 3vw;
+    }
 
     .productos-contenedor{
         height: 90%;
@@ -213,16 +227,25 @@ footer a{
         padding-inline: 4vw;
     }
 
-    .productos-paginacion{
-        height: 5%;
+    .productos-img{
+        width: 50%;
+    }
+
+    .card-body{
+        height: 15vh;
     }
 
     .productos-titulo{
-        font-size: 1.8vw;
+        font-size: 3vw;
+        height: 50%;
+    }
+
+    .productos-precio{
+        font-size: 3vw;
     }
 
     .productos-boton{
-        font-size: 1.4vw;
+        font-size: 2.5vw;
     }
 }
 
@@ -325,7 +348,7 @@ footer a{
     width: var(--ancho-compras);
     margin-bottom: 1vh;
     display: grid;
-    grid-template-columns: 1.5fr 8fr 2fr 0.5fr;
+    grid-template-columns: 2fr 15fr 2fr 1fr 2fr 2fr;
     background-color: var(--fondo-item);
     align-items: center;
     gap: 1vw;
@@ -336,16 +359,26 @@ footer a{
 }
 
 .carrito-img{
-    margin-inline: auto;
     border-radius: 0.5vw;
+    width: 100%;
 }
 
-.carrito-descripcion{
+.carrito-titulo{
     font-style: italic;
     font-size: 1.2vw;
+    line-height: 10vh;
 }
 
 .carrito-precio{
+    justify-self: end;
+    font-size: 1.2vw;
+}
+
+.carrito-cantidad{
+    font-size: 1.2vw;
+}
+
+.carrito-subtotal{
     justify-self: end;
     font-size: 1.2vw;
     font-weight: bolder;
@@ -359,7 +392,7 @@ footer a{
     width: var(--ancho-total);
     height: 15%;
     display: grid;
-    grid-template-columns: 1.5fr 8fr 2fr 0.5fr;
+    grid-template-columns: 2fr 15fr 2fr 1fr 2fr 2fr;
     align-items: center;
     background-color: var(--fondo-total);
     gap: 1vw;
@@ -367,11 +400,19 @@ footer a{
     border-radius: 0.5vw;
 }
 
+.carrito-comprar , .carrito-vaciar{
+    font-size: 0.8vw;
+}
+
+.carrito-vaciar{
+    width: 20%;
+}
+
 /* Media Querys CARRITO */
 @media only screen and (orientation: portrait) {
     
     .carrito-contenedor, .carrito-total{
-        grid-template-columns: 3fr 4fr 3.5fr 1.5fr;
+        grid-template-columns: 2fr 7fr 5fr 2fr 5fr 3fr;
         gap: 2vw;
         padding: 2vw;
         border-radius: 1vw;
@@ -381,22 +422,38 @@ footer a{
         padding-block: 15%;
     }
 
-    .carrito-descripcion{
-        font-size: 2vw;
+    .carrito-titulo{
+        font-size: 3vw;
+        line-height: 3vh;
     }
 
     .carrito-precio{
-        font-size: 2vw;
+        font-size: 3vw;
     }
     
+    .carrito-cantidad{
+        font-size: 3vw;
+    }
+
+    .carrito-subtotal{
+        font-size: 3vw;
+    }
+
     .carrito-boton{
-        font-size: 1.3vw;
+        font-size: 2vw;
     }
 
     .carrito-total{
         height: 5%;
     }
 
+    .carrito-comprar , .carrito-vaciar{
+        font-size: 2vw;
+    }
+
+    .carrito-vaciar{
+        width: 50%;
+    }
 }
 
 /* RESEÑAS */
