@@ -179,7 +179,11 @@ footer a{
 
 .productos-paginacion{
     height: 10%;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+}
+
+#botonPagPrevia, #botonPagProxima{
+    font-size: 1.0vw;
 }
 
 .productos-contenedor{
@@ -218,6 +222,10 @@ footer a{
     .productos-paginacion{
         height: 5%;
         font-size: 3vw;
+    }
+
+    #botonPagPrevia, #botonPagProxima{
+        font-size: 2.0vw;
     }
 
     .productos-contenedor{
