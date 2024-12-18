@@ -397,7 +397,7 @@ footer a{
 
 .carrito-total{
     width: var(--ancho-total);
-    height: 15%;
+    min-height: 15%;
     display: grid;
     grid-template-columns: 2fr 15fr 2fr 1fr 2fr 2fr;
     align-items: center;
@@ -451,7 +451,7 @@ footer a{
     }
 
     .carrito-total{
-        height: 5%;
+        min-height: 5%;
     }
 
     .carrito-comprar , .carrito-vaciar{
