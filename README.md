@@ -24,3 +24,4 @@ El proyecto implementa:
 A implementar proximamente:
 - Control de stock en el catalogo de productos
 - Permitir filtrado por categoria de productos
+- Mostrar mas detalles del producto (descripcion, medidas, peso, etc.) cuando se haga click sobre la tarjeta.
