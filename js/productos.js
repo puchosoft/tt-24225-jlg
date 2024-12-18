@@ -105,6 +105,8 @@ function agregarAlCarrito(product){
     }
     // Actualiza la clave 'carrito' en el localStorage
     localStorage.setItem('carrito', JSON.stringify(carrito));
+    // Incrementa el numero de items del carrito
+    actualizaItemsCarrito(1);
 }
 
 

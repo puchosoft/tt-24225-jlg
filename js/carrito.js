@@ -102,6 +102,8 @@ function quitarDelCarrito(id){
         carrito.splice(indice, 1);
     }
     localStorage.setItem('carrito', JSON.stringify(carrito));
+    // Incrementa el numero de items del carrito
+    actualizaItemsCarrito(-1)
     renderCarrito();
 }
 
@@ -112,9 +114,11 @@ function quitarDelCarrito(id){
 // Esta funcion atiende el evento del boton COMPRAR
 // Muestra un mensaje de aviso con el total de la compra
 // Vacia el carrito
+// Pone a cero la cantidad de items del carrito
 // Salta a la pagina de Productos
 function cerrarCompra(total){
     localStorage.removeItem('carrito');
+    localStorage.removeItem('itemsCarrito');
     alert(`Ud. ha confirmado la compra por un total de $ ${total}`);
     setTimeout(() => {
         window.location.href = 'productos.html'; 
@@ -128,9 +132,11 @@ function cerrarCompra(total){
 // Esta funcion atiende el evento del boton VACIAR
 // Muestra un mensaje de aviso de vaciado del carrito
 // Vacia el carrito
+// Pone a cero la cantidad de items del carrito
 // Salta a la pagina de Productos
 function vaciarCarrito(){
     localStorage.removeItem('carrito');
+    localStorage.removeItem('itemsCarrito');
     alert(`Ud. ha vaciado el carrito de compras.`);
     setTimeout(() => {
         window.location.href = 'productos.html'; 
