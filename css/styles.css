@@ -191,7 +191,6 @@ footer a{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     overflow: auto;
-    scrollbar-width: none;
     gap: 3vw;
     padding-inline: 2vw;
 }
@@ -465,11 +464,66 @@ footer a{
 }
 
 /* RESEÑAS */
-.resena-contenedor{
+#resena-contenedor{
     height: 90%;
     color: var(--color-h2);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 3vw;
+    overflow: auto;
+}
+
+.resena-item{
+    min-height: 15%;
+    width: 95%;
+}
+
+.resena-titulo{
+    width: 23%;
+    font-size: 1.2vw;
+}
+
+.resena-rating{
+    font-size: 2.0vw;
+    font-family: monospace;
+    border: 1px solid yellow;
+    height: 55%;
+    width: 7%;
+    text-align: center;
+}
+
+.resena-nombre{
+    width: 18%;
+    font-size: 1.2vw;
+}
+
+.resena-texto{
+    width: 39%;
+    font-size: 1.2vw;
+}
+
+.resena-fecha{
+    width: 9%;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+/* Media Querys RESEÑAS */
+@media only screen and (orientation: portrait) {
+
+    .resena-item{
+        flex-direction: column;
+        width: 65%;
+        min-height: 25%;
+        padding-block: 1vh;
+    }
+
+    .resena-titulo, .resena-rating, .resena-nombre, .resena-texto, .resena-fecha{
+        width: 90%;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .resena-rating{
+        font-size: 6vw;
+        width: 35%;
+        height: 25%;
+    }
 }

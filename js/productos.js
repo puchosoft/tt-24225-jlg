@@ -31,6 +31,7 @@ function obtenerProductos(pagina){
             d.description = p.description;
             d.price = p.price;
             d.thumbnail = p.thumbnail;
+            d.reviews = p.reviews;
             arreglo.push(d);
         }))
 

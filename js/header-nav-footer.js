@@ -35,7 +35,7 @@ document.querySelector('nav').innerHTML = `
     </ul>
 `;
 
-// Activa el link de la pagina actual
+// Activa el link de la pagina actual en el NAV
 paginaActual = window.location.href;
 listaLinks = document.querySelectorAll('nav ul li a')
 listaLinks.forEach( link => {
