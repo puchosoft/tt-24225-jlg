@@ -26,6 +26,7 @@ actualizaItemsCarrito(0);
 
 
 // Renderiza el 'nav'
+document.querySelector('nav').className = 'navbar navbar-expand justify-content-center navbar-dark';
 document.querySelector('nav').innerHTML = `
     <ul class="navbar-nav justify-content-around w-75">
         <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
