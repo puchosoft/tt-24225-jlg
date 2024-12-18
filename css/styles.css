@@ -473,6 +473,7 @@ footer a{
 .resena-item{
     min-height: 15%;
     width: 95%;
+    margin-bottom: 3vh;
 }
 
 .resena-titulo{
@@ -513,6 +514,7 @@ footer a{
         width: 65%;
         min-height: 25%;
         padding-block: 1vh;
+        margin-bottom: 4vh;
     }
 
     .resena-titulo, .resena-rating, .resena-nombre, .resena-texto, .resena-fecha{

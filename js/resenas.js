@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.reviews.forEach( rew => { // por cada comentario del item
                 // Crea un DIV con los datos del comentario
                 resena = document.createElement('div');
-                resena.className = 'resena-item border border-warning-subtle rounded-3 d-flex justify-content-between align-items-center mb-3 px-2';
+                resena.className = 'resena-item border border-warning-subtle rounded-3 d-flex justify-content-between align-items-center px-2';
                 resena.innerHTML = `
                     <p class="fw-bolder resena-titulo">${item.title}</p>
                     <span class="text-warning border-warning-subtle rounded-3 resena-rating">${'*'.repeat(rew.rating)+'&nbsp'.repeat(5 - rew.rating)}</span>
