@@ -74,7 +74,7 @@ function renderCatalogo(productos){
             <div class="card-body">
                 <p class="card-title fst-italic productos-titulo">${p.title}</p>
                 <p class="card-text fw-bolder productos-precio">$ ${p.price}</p>
-                <button class="btn btn-success btn-sm mt-2 productos-boton">Agregar</button>
+                <button class="btn btn-success btn-sm productos-boton">Agregar</button>
             </div>`;
         const botonAgregar = card.querySelector('button');
         botonAgregar.addEventListener('click', () => agregarAlCarrito(p));
